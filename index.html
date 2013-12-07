@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" ng-app="Quiz">
+	<head>
+		<meta charset="utf-8">
+		<title>Quiz App</title>
+		
+		<!-- include styles here starts -->
+		<link rel="stylesheet" href="./view/css/reset.css" /> <!-- reset css for uniform look in all browsers -->
+		<link rel="stylesheet" type="text/css" href="./view/css/common.css" /> <!-- file containing common styles -->
+		
+		<!-- uncomment the belowline on deployment and remove font include code from common.css -->
+		<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> -->
+		
+		<!-- include page specific styles here -->
+		<!-- page specific styles ends here -->
+		<!-- include style here ends -->
+		
+		<!-- include javascript libraries here starts -->
+		<script src="./resources/lib/less/less.js"></script>
+		<script src="./resources/lib/angular/angular.js"></script>
+		<script src="./resources/lib/jquery/jquery-2.0.3.min.js"></script>
+		<!-- <script src="lib/bootstrap/bootstrap-datepicker.js"></script> -->
+		<!-- include javascript libraries here ends -->
+		
+        <!-- javascript files containing models directives, filters -->
+		<script src="./model/module.js"></script>
+        <script src="./model/filter.js"></script>
+        <script src="./model/directive.js"></script> 
+		
+		<!-- include controllers here starts -->
+		<script src="./controller/login.js"></script>
+		<!-- include controllers here ends -->
+		
+		<!-- include page specific javascript files here -->
+		<!-- page specific javascript files ends -->
+	</head>
+	<body>
+		<div class="container" id="currentView"> <!-- main container for the app -->
+			<div ng-view> <!-- the app content(from template) will be loaded in this div --> </div>
+		</div>
+	</body>
+</html>
