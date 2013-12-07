@@ -1,4 +1,7 @@
 quizApp.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider
-		.when('/login', { templateUrl : './view/templates/login.html', controller : loginCtrl }).otherwise({ redirectTo : '/index' });
+		.when('/welcome', { templateUrl : './view/templates/welcome.html', controller : welcomeCtrl })
+        .when('/question/:id', { templateUrl : './view/templates/question.html', controller : questionCtrl })
+        .otherwise({ redirectTo : '/index' });
+}]);
